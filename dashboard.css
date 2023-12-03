@@ -39,3 +39,24 @@ li {
 span {
     color: var(--sidebar-text-color-theme);
 }
+
+.sidebar-icon,
+.dashboard-icon {
+    fill: white;
+}
+
+.dashboard-icon {
+    height: max(26px, 2.75vw);
+}
+
+.sidebar-icon {
+    height: max(20px, 1.6vw);
+}
+
+.sidebar-header {
+    font-size: max(16px, 1.8vw);
+}
+
+.sidebar-option {
+    font-size: max(12px, 1.4vw);
+}
