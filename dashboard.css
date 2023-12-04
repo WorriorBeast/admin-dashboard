@@ -41,7 +41,8 @@ span {
 }
 
 .sidebar-icon,
-.dashboard-icon {
+.dashboard-icon,
+.header-icon {
     fill: white;
 }
 
@@ -59,4 +60,23 @@ span {
 
 .sidebar-option {
     font-size: max(12px, 1.4vw);
+}
+
+.header-icon,
+input {
+    height: max(20px, 1.6vw);
+}
+
+.profile-image {
+    border-radius: 50%;
+}
+
+.bear {
+    fill: rgb(165, 42, 42);
+    height: 35px;
+    background-color: lightblue;
+}
+
+.icon .bear {
+    height: 50px;
 }
