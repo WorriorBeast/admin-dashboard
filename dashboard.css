@@ -42,7 +42,8 @@ span {
 
 .sidebar-icon,
 .dashboard-icon,
-.header-icon {
+.header-icon,
+.card-icon {
     fill: white;
 }
 
@@ -79,4 +80,8 @@ input {
 
 .icon .bear {
     height: 50px;
+}
+
+.card-icon {
+    height: 20px;
 }
