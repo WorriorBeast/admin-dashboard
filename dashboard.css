@@ -20,12 +20,42 @@ html, body {
     grid-template-rows: 1fr 5fr;
 }
 
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-items: start;
+}
+
+.dashboard .icon {
+    padding-left: 5px;
+}
+
 .search-and-account {
     grid-column: 2;
 }
 
 .sidebar-menu {
     grid-row: 1 /3;
+    display: grid;
+    max-height: 100vh;
+    grid-template-rows: 1fr 2fr 3fr;
+}
+
+.account-menu {
+    display: grid;
+    padding-left: 0px;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.settings-and-terms {
+    display: grid;
+    padding: 0;
+    grid-template-rows: 1fr 1fr 7fr;
+}
+
+.sidebar-icon-container {
+    text-align: center;
 }
 
 .main-content {
@@ -38,6 +68,8 @@ li {
 
 a {
     text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 
 span {
@@ -61,6 +93,7 @@ span {
 
 .sidebar-header {
     font-size: max(16px, 1.8vw);
+    padding-top: 3px;
 }
 
 .sidebar-option {
