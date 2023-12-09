@@ -1,11 +1,12 @@
 :root {
     --sidebar-text-color-theme: white;
+    --header-icon-color-theme: white;
 }
 
 html {
     background-color: black;
     font-size: 16px;
-    font-family: Verdana, Arial, sans-serif, Georgia, Garamond, serif;;
+    font-family: Verdana, Arial, sans-serif, Georgia, Garamond, serif;
 }
 
 html, body {
@@ -32,6 +33,70 @@ html, body {
 
 .search-and-account {
     grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.search-row,
+.account-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: max(3ch, 5%) 0px auto;
+    padding-right: 4%;
+}
+
+input {
+    border-style: none;
+    border-radius: 10px;
+}
+
+.search-row div:not([class]) {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
+
+.greeting {
+    font-size: max(0.6rem, 1vw);
+}
+
+.employee-name {
+    font-size: max(0.8rem, 1.4vw);
+    min-width: 130px;
+}
+
+.account-image .bear {
+    margin-top: -5px;
+}
+
+.user {
+    display: flex;
+    column-gap: 15px;
+    min-width: 300px;
+}
+
+.media-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3ch;
+}
+
+button {
+    flex: 1;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    height: 60%;
+    border: 1px solid white;
+    min-width: 70px;
+    font-size: max(0.9rem, 1.3vw);
 }
 
 .sidebar-menu {
@@ -76,9 +141,12 @@ span {
     color: var(--sidebar-text-color-theme);
 }
 
+.header-icon {
+    fill: var(--header-icon-color-theme);
+}
+
 .sidebar-icon,
 .dashboard-icon,
-.header-icon,
 .card-icon {
     fill: white;
 }
@@ -111,12 +179,12 @@ input {
 
 .bear {
     fill: rgb(165, 42, 42);
-    height: 35px;
+    height: max(28px, 2.3vw);
     background-color: lightblue;
 }
 
 .icon .bear {
-    height: 50px;
+    height: max(40px, 3.1vw);
 }
 
 .card-icon {
