@@ -37,6 +37,7 @@ html, body {
     grid-template-rows: 1fr 1fr;
     align-items: center;
     padding: 0px 30px;
+    background-color: #232326;
 }
 
 .search-row,
@@ -125,6 +126,7 @@ button {
 
 .main-content {
     grid-column: 2;
+    background-color: #12181d;
 }
 
 li {
