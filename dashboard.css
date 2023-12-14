@@ -1,5 +1,6 @@
 :root {
     --sidebar-text-color-theme: white;
+    --sidebar-icon-color-theme: white;
     --header-icon-color-theme: white;
     --main-content-background-color: #1b2c3a;
     --main-content-text-color-theme: #d2d2d2;
@@ -285,9 +286,8 @@ span {
 }
 
 .sidebar-icon,
-.dashboard-icon,
-.card-icon {
-    fill: white;
+.dashboard-icon {
+    fill: var(--sidebar-icon-color-theme);
 }
 
 .dashboard-icon {
